@@ -259,7 +259,7 @@ main {
   gap: 1.5rem;
 }
 
-.main__content2 iframe {
+.main__content2 img {
   width: 100%;
   aspect-ratio: 16/9;
 }
@@ -396,12 +396,13 @@ main {
 }
 
 .about__photo {
-  width: 100%;
+  width: 100%; 
   object-fit: cover;
   object-position: center;
   pointer-events: none;
   border-radius: 50rem;
   border: 1px solid var(--primary-border-color);
+  align-self: center;
 }
 
 .about__description {
@@ -409,6 +410,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
+  align-self: center;
 }
 
 .about__icons {
@@ -557,7 +559,11 @@ footer p {
     padding: 6rem;
   }
   .contact p {
-    width: 80%;
+    width: 40%;
+  }
+
+  .about__photo img{
+    height: 50%;
   }
 
   .main__content1 {
@@ -687,5 +693,6 @@ footer p {
   .technologies, .projects, .about {
     padding: 10rem 15rem 4rem;
   }
+
 
 }
